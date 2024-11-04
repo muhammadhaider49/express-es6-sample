@@ -1,12 +1,13 @@
 version: 0.2
+
 phases:
   install:
     commands:
-      - npm install
+      - npm install # Ensures all dependencies including devDependencies are installed
   build:
     commands:
       - npm run build
-      # - npm run test # Commented out temporarily
+      - npm run test
 artifacts:
   files:
     - dist-server/**/*
